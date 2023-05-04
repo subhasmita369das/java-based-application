@@ -14,9 +14,10 @@ docker yum install docker -y
 systemctl start docker 
 systemctl enable docker
 
-6. Install Conntrack:
+6. Install Conntrack & git:
 
 yum install conntrack -y
+yum install git -y
 
 7. Install k8
 
@@ -38,6 +39,10 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 /usr/local/bin/kubectl version
+ 
+9.1. clone the repository
+
+git clone 
 
 10. Make the DB up
 
